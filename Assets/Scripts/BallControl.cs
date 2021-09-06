@@ -6,8 +6,8 @@ public class BallControl : MonoBehaviour
 {
     private Rigidbody2D rb2d;
 
-    public float xForce;
-    public float yForce;
+    public float xForce = 10f;
+    public float yForce = 5f;
 
     private Vector2 trajectoryOG;
 
@@ -30,9 +30,9 @@ public class BallControl : MonoBehaviour
         float yRand = Random.Range(-yForce, yForce);
         float rand = Random.Range(0,2);
         if (rand<1.0f){
-            rb2d.AddForce(new Vector2(xForce, yRand));            
+            rb2d.velocity = new Vector2(xForce, yRand);            
         } else {
-            rb2d.AddForce(new Vector2(-xForce, yRand));
+            rb2d.velocity = new Vector2(-xForce, yRand);
         }
     }
 
