@@ -703,6 +703,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 9030810827004908529, guid: 7a2debae29295634c96004f78630d674,
+        type: 3}
+      propertyPath: moveUp
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030810827004908529, guid: 7a2debae29295634c96004f78630d674,
+        type: 3}
+      propertyPath: moveDown
+      value: 108
+      objectReference: {fileID: 0}
     - target: {fileID: 9030810827004908533, guid: 7a2debae29295634c96004f78630d674,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -762,16 +772,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9030810827004908529, guid: 7a2debae29295634c96004f78630d674,
-        type: 3}
-      propertyPath: moveUp
-      value: 112
-      objectReference: {fileID: 0}
-    - target: {fileID: 9030810827004908529, guid: 7a2debae29295634c96004f78630d674,
-        type: 3}
-      propertyPath: moveDown
-      value: 108
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2debae29295634c96004f78630d674, type: 3}
@@ -891,8 +891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6b7d079cc72eef4bb332ba0644ecfe2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xForce: 50
-  yForce: 15
+  xForce: 10
+  yForce: 5
 --- !u!58 &1355734801
 CircleCollider2D:
   m_ObjectHideFlags: 0
