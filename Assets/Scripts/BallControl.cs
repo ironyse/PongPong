@@ -30,7 +30,7 @@ public class BallControl : MonoBehaviour
         float yRand = Random.Range(-yForce, yForce);
         float rand = Random.Range(0,2);
         if (rand<1.0f){
-            rb2d.velocity = new Vector2(xForce, yRand);            
+            rb2d.velocity = new Vector2(xForce, yRand);
         } else {
             rb2d.velocity = new Vector2(-xForce, yRand);
         }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    public GUISkin layout;
+
     public PlayerController player1;
     private Rigidbody2D p1r2bd;
 
@@ -33,6 +35,7 @@ public class GameController : MonoBehaviour
     }
 
     void OnGUI(){
+        GUI.skin = layout;
         GUI.Label(new Rect(Screen.width/2 - 150 - 12, 20, 100, 100), "" + player1.Score);
         GUI.Label(new Rect(Screen.width/2 + 150 + 12, 20, 100, 100), "" + player2.Score);
 
