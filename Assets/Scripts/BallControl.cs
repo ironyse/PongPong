@@ -18,12 +18,13 @@ public class BallControl : MonoBehaviour
     void Start(){
         trajectoryOG = transform.position;
         rb2d = GetComponent<Rigidbody2D>();
-        Invoke("PushBall", 2);
+        Invoke(nameof(PushBall), 2);
     }
 
-    void ResetGame(){
+    void ResetGame()
+    {
         ResetBall();
-        Invoke("PushBall", 2);
+        Invoke(nameof(PushBall), 2);
     }
 
     void PushBall(){

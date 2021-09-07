@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     public KeyCode moveDown = KeyCode.S;
 
     private Rigidbody2D rb2d;
-    private float verticalInput;
     private int score;
     private ContactPoint2D lastContactPoint;
 
@@ -61,6 +60,7 @@ public class PlayerController : MonoBehaviour
     void OnCollisionEnter2D(Collision2D coll) {
         if (coll.gameObject.name.Equals("Ball")){
             lastContactPoint = coll.GetContact(0);
+            coll.collider.attachedRigidbody.velocity = Vector2.ClampMagnitude(coll.collider.attachedRigidbody.velocity, 10f);
         }
     }
 }
