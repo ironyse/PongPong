@@ -49,7 +49,7 @@ public class GameController : MonoBehaviour
             GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height/2 -10, 2000, 1000), "Player One Wins");
             ball.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
         } else if (player2.Score == maxScore){
-            GUI.Label(new Rect(Screen.width / 2 + 30, Screen.height/2 -10, 2000, 1000), "Player Two Wins");
+            GUI.Label(new Rect(Screen.width / 2 - 150, Screen.height/2 -10, 2000, 1000), "Player Two Wins");
             ball.SendMessage("ResetBall", null, SendMessageOptions.RequireReceiver);
         }
 
